@@ -1,0 +1,163 @@
+* palette colori
+    -60: #D8DDEF
+    -30: #A0A4B8
+    -10: #7293A0
+    <!--carosello sinistra-->
+        <div id="myCarousel" class="carousel slide m-0 p-0 border-0" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Example headline.</h1>
+                  <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Another example headline.</h1>
+                  <p>Some representative placeholder content for the second slide of the carousel.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>One more for good measure.</h1>
+                  <p>Some representative placeholder content for the third slide of this carousel.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--carosello centro-->
+        <div class="col-4">
+          <!-- immagini header-->
+          <div class="container-fluid my-5">
+            <div class="row  justify-content-around">
+              <div class="col-3  g-0">
+                <div class="card text-bg-dark rounded-1 g-0 border-0 immagine-card">
+                  <img src="/foto articoli 1.jpg" class="card-img b-0" alt="...">
+                  <div class="card-img-overlay rounded-0 border-none g-0 immagine-card">
+                  </div>
+                  <div class=""></div>
+                </div>
+              </div>
+              <div class="col-3  g-0 ">
+                <div class="card text-bg-dark g-0 rounded-1 ">
+                  <img src="/immagini carosello/foto carosello 2.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay rounded-0 b-0 g-0 ">
+        
+                  </div>
+                </div>
+              </div>
+              <div class="col-3  g-0">
+                <div class="card text-bg-dark immagine-info bg-black g-0 rounded-1 border-0">
+                  <img src="/immagine info.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay  rounded-0 border-none g-0 immagine-card">
+        
+                  </div>
+                </div>
+              </div>
+        
+        
+        
+            </div>
+        
+          </div>
+
+
+
+
+          <div class="modal fade" id="Laptop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="container bg-2">
+                  <div class="row bg-2">
+                    <div class="col-12 col-md-6">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ratione ab debitis quis saepe numquam eum dolore officia rerum, accusamus repellat qui sint iusto iure laboriosam animi provident, eveniet tempora.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-header">
+                  
+                </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+<!--offcanvas-->
+          <div class=" bg-2 offcanvas offcanvas-bottom py-2 px-1 h-75 mx-0" tabindex="-1" id="Laptop"
+          aria-labelledby="offcanvasBottomLabel">
+          <div class="container-fluid pb-2 xs-none">
+            <div class="row justify-content-around">
+              <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img src="/lenovo think book.avif" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+      
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img src="/mac air.jpg" class="card-img-top pb-5" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+      
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img src="/hp pavillon.avif" class="card-img-top pb-2" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+      
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+      
+      
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <button type="button" class="btn-close pt-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      
+          </div>
+
+          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0)), url(./assets/hero1.jpg);
+          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0)), url(./assets/hero1.jpg);
+height: 80vh;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;

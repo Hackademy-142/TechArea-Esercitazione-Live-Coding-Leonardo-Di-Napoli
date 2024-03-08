@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechArea</title>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--Css-->
+  <link rel="stylesheet" href="/live-coding.css">
+  <!-- Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Assistant:wght@200..800&family=Mallanna&display=swap"
+  rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Anta&family=Assistant:wght@200..800&family=Mallanna&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+  rel="stylesheet">
+  <!--CDN icone bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+</head>
+
+<body>
+  <!--Navbar Bootstrap-->
+  <nav class="navbar navbar-expand-md navbar-secondary bg-white bg-fade text_nav sticky-top txt-1 shadow-sm">
+    <a class="navbar-brand text_nav ms-5" href="#"> <img src="/immagini/logo cpu.png" alt=""></a>
+    
+    
+    <div class="collapse navbar-collapse" id="navbarsExample04">
+      <ul class="navbar-nav mx-auto mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text_nav" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text_nav" href="#PRODOTTI">Prodotti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text_nav" href="#articoli">Articoli</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text_nav" href="#contatti">Contatti</a>
+        </li>
+        
+        
+        
+        
+      </ul>
+      
+      <button class="btn me-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        
+        <i class="bi bi-person-fill fs-4 txt-1"></i>
+      </button>
+      
+      
+    </div>
+    <!-- Bottone collapse barra navigazione-->
+    <button class="navbar-toggler collapsed border-0 txt-1" type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+<!--MODALE LOGIN-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 bg-1 rounded-0">
+      <div class="modal-body text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3>Accedi</h3>
+            </div>
+            
+            <!--FORM LOGIN-->
+            <div class="row">
+              <div class="col-12">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label small">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label small">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label small" for="exampleCheck1">Ricordami</label>
+                  </div>
+                  <button type="submit" class="btn bg-3 d-block mx-auto text-white"><i
+                    class="bi bi-send ms-3 me-3"></i></button>
+                  </form>
+                  
+                </div>
+                
+              </div>
+              
+              
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <!--<nav class="navbar navbar-expand-md navbar-light bg-light border-0 shwadow-3" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Expand at md</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>-->
+          
+          
+          
+          
+        </ul>
+        <!--barra di ricerca-->
+        <!--<form role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </form> -->
+      </div>
+    </div>
+  </nav>
+  <!--hero prodotti--> 
+  <div id="HOME" class="container-fluid mx-auto  justify-content-around bg-gradient border-b">
+    <div class="row align-items-center border-1 bg-2 shadow-lg p-2">
+      <div class="col-12 col-md-6">
+        <h2 class="text-white stile-underline">Prodotti</h2>
+        <p class="text-white txt-card">Scopri la nostra varietà di prodotti e fai il tuo acquisto. Naviga nelle varie categorie, dal mobile fino al Pc Gaming. Tutto ciò che vuoi a portata di un click.</p>
+      </div>
+      <!--carosello prodotti-->
+      <div class="col-12 col-md-6">
+        
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/immagini/foto pc dim.jpg" class="d-block w-100 img-fluid rounded-1 shadow-lg" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/immagini/foto mobile dim.jpg" class="d-block w-100 img-fluid rounded-1 shadow-lg" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/immagini/pc gaming dim.jpg" class="d-block w-100 img-fluid rounded-1 shadow-lg" alt="...">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <!--hero articoli-->
+  <div class="container-fluid mx-auto  justify-content-around bg-gradient my-none border-b">
+    <div id="articoli" class="row align-items-center border-1 bg-1 shadow-lg p-2">
+      <div class="col-12 col-md-6 order-md-last">
+        <h2 class="text-white stile-underline">Articoli</h2>
+        <p class="text-white txt-card">Rimani sempre aggiornato riguardo le novità del mondo tecnologico. Scopri ogni settimana nuovi articoli di livello internazionale e lasciati guidare alla scoperta del mondo della tecnologia</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <!--carosello articoli-->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/immagini/foto news dim.jpg" class="d-block w-100 img-fluid rounded-1 shadow-lg" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/immagini/foto notizie.jpg" class="d-block w-100 img-fluid rounded-1 shadow-lg" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/immagini/foto articoli 3.jpg" class="d-block w-100 img-fluid rounded-1 shadow-lg" alt="...">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <!--sezione prodotti-->
+  <div id="PRODOTTI" class="pt-5 container-fluid justify-content-center bg-2">
+    <div class="row  justify-content-md-center">
+      <div class="col-12 justify-content-center">
+        <h2 class="text-white text-center">Prodotti</h2>
+      </div>
+    </div>
+    <div class="row justify-content-around pt-5 pb-5">
+      <div class="col-12 col-md-3 card-t">
+        <div class="card text-bg-dark border-b card-t"> 
+          
+          <img src="/immagini/foto pc dim.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay immagine-card">
+            <a href="#Laptop"><h5 class ="card-title txt-card text-decoration-none text-center"> Laptop</h5></a>
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card text-bg-dark border-b card-t">
+          <img src="/immagini/foto mobile dim.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay immagine-card">
+            <a href="#mobile"><h5 class="card-title txt-card text-center">Mobile</h5></a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card text-bg-dark border-b card-t">
+          <img src="/immagini/pc gaming dim.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay immagine-card ">
+            <a href="#pcgaming"><h5 class="card-title txt-card text-center"> Pc Gaming</h5></a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--laptop-->
+  <div  class="container-fluid bg-2 border-b py-5">
+    <div id="Laptop" class="row pt-4  ">
+      <div class="col-12 col-md-6 ">
+        <div class="class lap-stiky">
+          <h3  class="text-white stile-underline">Laptop</h3>
+          <p class="txt-card text-white"> Sei alla ricerca di un nuovo Laptop? Abbiamo sicuramente ciò che fa al caso tuo. Scorri e cerca il prodotto più adatto a te.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 align-items-center">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4">
+              <img src="/immagini/lenovo think book.avif" class="img-fluid rounded-start pt-3" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Lenovo Think-Book</h5>
+                <p class="card-text txt-card txt-card text-sm">Notebook professionale da 40,64 cm (16"), dotato di certificazione Intel® Evo™ con piattaforma fino a vPro® Essentials (modelli selezionati).Velocità di risposta al top con batteria che dura tutto il giorno. Accesso completamente automatizzato con webcam a infrarossi e Windows Hello. Affidabilità elevata grazie ai controlli e ai test di resistenza in conformità alle specifiche militari. Tastiera ergonomica riprogettata e schermi grandi opzionali. Ideale per raccolta dati, lavoro creativo e collaborazione in team</p>
+                <button type="submit" class=" btn bg-3 d-block mx-auto  txt-1 py-0">
+                  <p>ACQUISTA</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4">
+              <img src="/immagini/mac air.jpg" class="img-fluid rounded-start " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Apple MacBook Pro 13</h5>
+                <p class="card-text txt-card">Il popolare display True-Tone, la lavorazione assolutamente di alta qualità e la potenza di elaborazione ora anche leggermente più veloce rendono l’Apple MacBook Pro 13.3 2019 completamente rinnovato un ultrabook al top. fa tutto meglio: più potenza, più durata della batteria (9 ore) e più extra. L’illuminazione della tastiera controllata automaticamente, l’enorme trackpad con grande precisione e l’alta velocità di trasferimento W-LAN sono solo un piccolo estratto delle sofisticate caratteristiche di Apple.</p>
+                <button type="submit" class="btn bg-3 d-block mx-auto txt-1 py-0">
+                  <p>ACQUISTA</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4">
+              <img src="/immagini/hp pavillon.avif" class="img-fluid rounded-start " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">HP Pavilion Plus 16</h5>
+                <p class="card-text txt-card">Con un potente processore Intel® Core™, uno schermo dalla bellezza ipnotica e strumenti che semplificano al massimo la collaborazione, superando qualunque aspettativa, il PC laptop HP Pavilion Plus da 16'' è perfetto per qualunque attività. La videocamera da 5MP velocizza l'accesso con Windows Hello[2], mentre i controlli video di HP Presence ti permettono di mostrarti sempre al meglio e mantenere il contatto visivo con tutti.</p>
+                <button type="submit" class="btn bg-3 d-block mx-auto txt-1 py-0">
+                  <p>ACQUISTA</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  <!--mobile-->
+  <div class="container-fluid bg-2 border-b py-5">
+    <div id="mobile" class="row pt-4 align-items- ">
+      <div class="col-12 col-md-6 order-md-last">
+        <div class="class lap-stiky">
+          <h3 class="text-white stile-underline">Mobile</h3>
+          <p class="txt-card text-white"> Naviga tra gli ultimi modelli di smartphone alla ricerca di quello perfetto per te. </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4">
+              <img src="/immagini/iphone 15.jpg" class="img-fluid rounded-start pt-3" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"> Apple Iphone 15 </h5>
+                <p class="card-text txt-card">iPhone 15: con Dynamic Island, fotocamera da 48MP e USB-C. E un robusto design in alluminio e in vetro a infusione di colore. La Dynamic Island ti mostra notifiche e attività in tempo reale, così non ti perdi nulla: puoi vedere chi ti sta chiamando, sapere se il tuo volo è in orario e molto altro. Il chip ultraveloce permette funzioni evolute come la fotografia computazionale, le transizioni fluide della Dynamic Island,</p>
+                <button type="submit" class="btn bg-3 d-block mx-auto txt-1 py-0">
+                  <p>ACQUISTA</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4">
+              <img src="/immagini/samsung galaxy.webp" class="img-fluid rounded-start pt-5" alt="...">
+            </div>
+            <div class="col-md-8 justify-content-center">
+              <div class="card-body">
+                <h5 class="card-title">Samsung Galaxy S24 Ultra</h5>
+                <p class="card-text txt-card ">Effettua ricerche come mai prima d'ora¹, ottieni la traduzione in tempo reale di una chiamata², riassumi i tuoi appunti in un formato chiaro³ e modifica facilmente le tue foto⁴ - tutto questo dallo smartphone, tutto questo con l’AI. Grazie all'enorme capacità e a una maggiore efficienza energetica, la batteria di Galaxy S24 Ultra assicura una maggiore durata proprio quando è più importante, ad esempio per affrontare l'epica battaglia a cui ti stai preparando.</p>
+                <button type="submit" class="btn bg-3 d-block mx-auto txt-1 py-0">
+                  <p>ACQUISTA</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4">
+              <img src="/immagini/xiaomi.jpg" class="img-fluid rounded-start pt-4" alt="...">
+            </div>
+            <div class="col-md-8 justify-content-center">
+              <div class="card-body">
+                <h5 class="card-title">Xiaomi Redmi Note 13 Pro </h5>
+                <p class="card-text txt-card">Xiaomi Redmi Note 13 Pro. Dimensioni schermo: 16,9 cm (6.67"), Risoluzione del display: 2712 x 1220 Pixel. Famiglia processore: Qualcomm Snapdragon. Capacità della RAM: 12 GB, Capacità memoria interna: 512 GB. Risoluzione fotocamera posteriore (numerico): 200 MP, Tipo di fotocamera posteriore: Tripla fotocamera. Capacità della scheda SIM: Doppia SIM. Capacità della batteria: 5100 mAh.</p>
+                <button type="submit" class="btn bg-3 d-block mx-auto txt-1 py-0">
+                  <p>ACQUISTA</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  <!--Pc gaming-->
+  <div class="container-fluid bg-2 border-b py-5">
+    <div  id="pcgaming" class="row pt-4 align-items- ">
+      <div class="col-12 col-md-6">
+        <div class="class lap-stiky">
+          <h3 class="text-white stile-underline">Pc Gaming</h3>
+          <p class="txt-card text-white"> Nella continua evoluzione del Pc Gaming, non farti cogliere impreparato. Cra il tuo Pc partendo da zero e raggiungi prestazioni mai viste prima grazie i nostri prodotti.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4">
+              <img src="/immagini/asus rog.jpg" class="img-fluid rounded-start pt-3" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">ASUS ROG Strix GeForce RTX 4090 White OC Edition 24GB</h5>
+                <p class="card-text txt-card">
+                  La scheda grafica NVIDIA GeForce RTX 4090 offre una velocità estrema a giocatori e creatori. Grazie a prestazioni senza precedenti e a capacità grafiche potenziate dall'intelligenza artificiale, questa nuova console ti metterà al centro dell'azione.</p>
+                  <button type="submit" class="btn bg-3 d-block mx-auto txt-1 py-0">
+                    <p>ACQUISTA</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4">
+                <img src="/immagini/dissipatore.avif" class="img-fluid rounded-start pt-5" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">NZXT Kraken Elite 360 RGB</h5>
+                  <p class="card-text txt-card ">NZXT Kraken Elite 360 RGB. Tipo: Raffreddatore di liquidi tutto in uno, Diametro del ventilatore: 12 cm, flusso d'aria massimo: 78,86 pdc/min, pressione dell'aria massima: 2,57 mmH2O. Colore del prodotto: Bianco</p>
+                  <button type="submit" class="btn bg-3 d-block mx-auto txt-1 py-0">
+                    <p>ACQUISTA</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4">
+                <img src="/immagini/case.jpg" class="img-fluid rounded-start pt-4" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">KEDIERS Case PC- preinstallato 6 ventole ARGB, ATX Mid Tower Gaming case, con doppio vetro temperato full screen, G500</h5>
+                  <p class="card-text txt-card">KEDIERS offre un eccellente case per PC da gioco G500 con esperienza visiva ed esperienza di configurazione, 6 ventole PWM ARGB preinstallate, con costoso design della porta del pannello laterale in vetro temperato, buona dissipazione del calore ed estetica.</p>
+                  <button type="submit" class="btn bg-3 d-block mx-auto txt-1 py-0">
+                    <p>ACQUISTA</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+    <!--sezione articoli-->
+    <div class="container-fluid py-3 bg-1 txt-card bord">
+      <div class="row text-center">
+        <h3 class="text-white">Articoli</h3>
+      </div>
+      <div class="row py-3 align-items-center">
+        <div class="col-12 col-md-6">
+          <div class="card text-bg-dark">
+            <img src="/immagini/ipad-pro-2024.webp" class="card-img" alt="...">
+            <div class="card-img-overlay immagine-card">
+              <h5 class="card-title">i nuovi Ipad in arrivo nel 2024</h5>
+              <p class="card-text un">Tutte le anticipazioni sui prossimi tablet di Apple con le informazioni sui chip
+                montati a bordo</p>
+                <p class="card-text"><small>01.03.2024</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="txt-card text-white border-b">Ci sono soprattutto tanti nuovi iPad tra i dispositivi al centro di una
+              recente tornata di anticipazioni hardware sulle uscite di Apple attese nel corso del 2024. Una nota e
+              attendibile fonte ha infatti individuato i chip che saranno montati a bordo di ben sedici gadget: otto saranno
+              iPad di fascia media con i modelli standard, Air e Mini, mentre i rimanenti otto considereranno il top di
+              gamma iPad Pro assieme ai già ben noti iPhone 16. I processori coprono un ventaglio molto ampio e variegato
+              visto che partono dal vecchio A14 Bionic fino ai più evoluti M3 e l'ancora inedito A18.</p>
+            </div>
+          </div>
+          <div class="row py-3 align-items-center">
+            <div class="col-12 col-md-6">
+              <div class="card text-bg-dark">
+                <img src="/immagini/Migliori dash cam febbraio 2024.webp" class="card-img" alt="...">
+                <div class="card-img-overlay immagine-card">
+                  <h5 class="card-title">Le migliori dash cam per auto che puoi comprare nel 2024 </h5>
+                  <p class="card-text">Pronte a filmare un lungo viaggio o a monitorare una sosta prolungata, 20 dash cam
+                    perfette per migliorare la vita di qualunque automobilista</p>
+                    <p class="card-text"><small>03.03.2024</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <p class="txt-card text-white border-b">Conosciute più comunemente con l’abbreviazione dash cam, le dashboard
+                  camera sono un accessorio che negli ultimi anni sta riscuotendo sempre maggiore successo tra gli
+                  automobilisti. Pronte ad agganciarsi in maniera salda al parabrezza, queste piccole telecamere permettono di
+                  filmare tutto ciò che avviene in strada e di salvare le registrazioni su file che possono essere condivisi in
+                  un secondo tempo su smartphone o su computer. Dotate di caratteristiche tecniche che consentono di ottenere
+                  riprese di notevole qualità sia di giorno che di notte, si adattano a una molteplicità di usi, rivelandosi
+                  tanto eccellenti compagne di viaggio per chi vuole un ricordo di una lunga cavalcata “on the road”, quanto un
+                  perfetto “testimone” in caso di dispute legali derivanti da incidenti stradali e di atti vandalici.</p>
+                </div>
+              </div>
+              <div class="row py-3 align-items-center">
+                <div class="col-12 col-md-6">
+                  <div class="card text-bg-dark">
+                    <img src="/immagini/classifica migliori smartphone fascia media febbraio 2024.webp" class="card-img" alt="...">
+                    <div class="card-img-overlay immagine-card">
+                      <h5 class="card-title">La classifica: i migliori smartphone di fascia media (febbraio 2024)</h5>
+                      <p class="card-text">Pochi ma buoni. Li abbiamo provati e li abbiamo messi in ordine, per raccontarti ogni
+                        mese quali sono quelli da scegliere</p>
+                        <p class="card-text"><small>29.02.2024</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <p class="txt-card text-white border-b">Il Mobile World Congress che si sta chiudendo in queste ore non è stato
+                      generoso per chi è a caccia dei migliori smartphone di fascia media tra i quali scegliere il proprio nuovo
+                      telefono. A dominare la fiera sono state le uscite eclatanti di Honor e Xiaomi, mentre per quel che riguarda i
+                      gadget posizionati tra gli 800 e i 300 euro febbraio non ha visto novità di rilievo. La nostra classifica del
+                      resto non è pensata per seguire le novità a tutti i costi, ma per chi cerca un prodotto che resti affidabile
+                      negli anni – capace di distinguersi dalla massa ma che al contempo non richieda un esborso economico
+                      astronomico.</p>
+                    </div>
+                  </div>
+                </div>
+                <!--footer-->
+                <div class="container">
+                  <footer id="contatti" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
+                    <div class="col-md-4 d-flex align-items-center">
+                      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                          <use xlink:href="#bootstrap"></use>
+                        </svg>
+                      </a>
+                      <a class="navbar-brand text_nav ms-5" href="#"> <img src="/immagini/logo cpu.png " alt=""></a>
+                    </div>
+                    
+                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                      <i class="bi bi-twitter-x mx-auto txt-1"></i>
+                      <i class="bi bi-instagram mx-auto txt-1"></i>
+                      <i class="bi bi-facebook mx-auto txt-1"></i>
+                    </ul>
+                  </footer>
+                  
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+                
+              </body>
+              
+              </html>

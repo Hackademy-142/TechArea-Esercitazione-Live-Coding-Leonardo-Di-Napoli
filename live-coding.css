@@ -1,0 +1,104 @@
+body {
+    font-family: "Mallanna", sans-serif;
+}
+
+/*.font-title {
+    text-shadow: 
+    #ffff 0 0 12px,
+    #4A4238 0 0 25px,
+     #4D5359 0 0 35px, 
+     #508484 0 0 45px;
+    font-family: "Anta", sans-serif;
+
+}*/
+
+.txt-1 {
+    color: #4A4238;
+}
+.txt-2 {
+    color: #4D5359;
+}
+.txt-acc {
+    color: #508484;
+}
+
+.bg-1 {
+    background-color:#4A4238 ;
+
+}
+.bg-2 {
+    background-color:#4D5359 !important ;
+    
+
+}.bg-3 {
+    background-color:#508484;
+
+}
+
+.immagine-card  { 
+    border-image: fill 0 linear-gradient(#000,#0001) !important;
+}
+
+.immagine-info {
+    height: 100%;
+}
+.stile-underline{
+    position: relative;
+}
+
+.stile-underline::before {
+    position: absolute;
+    content: '';
+    bottom: 0%;
+    left: 0%;
+    width: 50%;
+    height: 10%;
+    background-color:#508484 ;
+
+}
+
+.background-tras {
+    opacity: 0.5;
+}
+
+.txt-card {
+    font-family: "Nunito", sans-serif;
+    font-weight: lighter;
+}
+
+.txt-animation {
+    animation-duration: 0.5s;
+    display: block;
+    opacity: 0;
+    animation: reveal 0.8s forwards var(--d);
+}
+@keyframes reveal {
+    from {
+        transform: translate(20px);
+    }
+    to{
+        opacity: 1;
+        transform:none
+    }
+}
+.border-b {
+    border-bottom: 2px solid #508484 !important;
+}
+
+.lap-stiky{
+    position: sticky;
+    top: 150px ; 
+}
+
+.card{
+    transition: all 0,5s;
+}
+.card-t :hover{
+    transform: scale(1.15) !important;
+}
+
+a {
+    color: white;
+    text-decoration: none; !important
+    
+}
